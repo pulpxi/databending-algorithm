@@ -19,7 +19,7 @@ pixels_y = 0
 class UI(QMainWindow):
     def __init__(self):
         super(UI, self).__init__()
-        uic.loadUi("loadui.ui", self)
+        uic.loadUi("Resources/loadui.ui", self)
         # Components
         global textareaG, picturelabel
         self.label = self.findChild(QLabel, "label")
@@ -34,7 +34,7 @@ class UI(QMainWindow):
 
 
     def setpictureonlabel(self):
-        pixmap = QPixmap("glitchImage.jpg")
+        pixmap = QPixmap("Resources/glitchImage.jpg")
         picturelabel.setPixmap(pixmap)
 
     def createImage(self):
